@@ -16,18 +16,19 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
 
-      # (Optional) If you have a build step:
+      # (Optional) If you have a build step (React, Hugo, Jekyll, etc.):
       # - name: Build your site
       #   run: |
       #     npm install
       #     npm run build
 
-      # Upload site files to be deployed. Usually the path is either `.` (for raw HTML) 
-      # or your build output folder (e.g., `dist`, `build`, etc.)
+      # Upload site files for Pages. 
+      # If you don't have a separate build folder, use './' 
+      # (assuming index.html is at repo root):
       - name: Upload artifact for Pages
         uses: actions/upload-pages-artifact@v1
         with:
-          path: './'  # Replace with your build output if you have one
+          path: './'
 
   deploy:
     needs: build
