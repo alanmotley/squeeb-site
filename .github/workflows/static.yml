@@ -1,41 +1,36 @@
-name: Deploy to GitHub Pages
+name: Deploy Squeeb Site to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # or whichever branch you want to deploy from
+    branches: [ "main" ]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # (Optional) If you have a build step (React, Hugo, Jekyll, etc.):
-      # - name: Build your site
-      #   run: |
-      #     npm install
-      #     npm run build
-
-      # Upload site files for Pages. 
-      # If you don't have a separate build folder, use './' 
-      # (assuming index.html is at repo root):
-      - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v1
+      # No build step needed if your index.html is at the repo root.
+      # Just upload the entire repo root.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: './'
+          path: '.'  # The '.' means the root—where your index.html is.
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+        id: deployment
+        uses: actions/deploy-pages@v4
