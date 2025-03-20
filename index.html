@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Squeeb: The Meme Coin That Squishes Boredom" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Squeeb: The Meme Coin That Squishes Boredom</title>
+  <!-- Ethers.js (CDN) - Optional if you plan on using wallet connect -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+  <style>
+    /* Reset & Basic Styling */
+    * {
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      padding: 0;
+      margin: 0;
+    }
+    header, main, footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fafafa;
+      border-bottom: 1px solid #eee;
+    }
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+    }
+    header p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav button {
+      cursor: pointer;
+      padding: 10px 20px;
+      margin-right: 10px;
+    }
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    ul, ol {
+      margin: 10px 0 0 20px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+      text-align: center;
+      color: #777;
+    }
+    .disclaimer {
+      font-size: 0.9rem;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header>
+    <h1>Squeeb: The Meme Coin That Squishes Boredom</h1>
+    <p>Because crypto should be fun, quirky, and a little “wtf?”</p>
+    <!-- Optional Connect Wallet Button -->
+    <nav>
+      <button id="connectWalletBtn">Connect Wallet</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <section id="introduction">
+      <h2>Introduction: Squeeb Explained</h2>
+      <p>
+        Squeeb is your crypto bestie—here to squash boredom, deliver laughs, and add a pinch of
+        “wtf?” to your blockchain experience. It's a meme coin designed to leave you smiling,
+        slightly amused, and maybe a little curious. If you're a Gen Z trailblazer, TikTok
+        enthusiast, or someone who stumbled upon this quirky crypto, you’ll quickly understand why
+        everyone’s asking, “Squeeb? wtf?”
+      </p>
+      <p><strong>Our Mission:</strong><br/>
+        At Squeeb, we believe crypto should be entertaining, inclusive, and a bit unpredictable.
+        Our goal? Create fun-filled moments that gently make you say, “wtf?”—but always with a grin.
+      </p>
+    </section>
+
+    <section id="why-squeeb">
+      <h2>Why Squeeb?</h2>
+      <p>
+        Let’s face it, crypto can be a little dry. Enter Squeeb: inspired by the playful vibes of
+        TikTok and meme culture, we’re here to liven things up. Think catchy hashtags (#SqueebLife),
+        relatable soundbites, influencer collabs, and merchandise that sparks conversations starting
+        with “Squeeb? wtf?”
+      </p>
+    </section>
+
+    <section id="token-details">
+      <h2>Token Details & Metrics</h2>
+      <ul>
+        <li><strong>Name:</strong> Squeeb</li>
+        <li><strong>Symbol:</strong> SQUEEB</li>
+        <li><strong>Total Supply:</strong> 100,000,000,000 (100 billion)</li>
+        <li><strong>Decimals:</strong> 18 (standard on BSC)</li>
+        <li><strong>Blockchain:</strong> Binance Smart Chain (BSC)</li>
+        <li><strong>Contract Address:</strong> <em>(coming soon)</em></li>
+      </ul>
+    </section>
+
+    <section id="how-to-buy">
+      <h2>How to Buy Squeeb</h2>
+      <ol>
+        <li>Set up a crypto wallet (MetaMask, Trust Wallet).</li>
+        <li>Purchase BNB (Binance Coin) on an exchange.</li>
+        <li>Transfer BNB to your wallet.</li>
+        <li>Go to PancakeSwap, connect your wallet, and swap BNB for SQUEEB tokens.</li>
+        <li>Welcome to the Squeeb family!</li>
+      </ol>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <ol>
+        <li><strong>Phase 1: The Launch</strong>
+          <ul>
+            <li>Launch on BSC</li>
+            <li>Community-building kickoff</li>
+            <li>Initial social campaigns</li>
+          </ul>
+        </li>
+        <li><strong>Phase 2: Going Viral</strong>
+          <ul>
+            <li>TikTok challenges</li>
+            <li>Meme contests</li>
+            <li>Influencer partnerships</li>
+          </ul>
+        </li>
+        <li><strong>Phase 3: Expansion</strong>
+          <ul>
+            <li>NFT collaborations</li>
+            <li>Merch drops</li>
+            <li>Creative partnerships</li>
+          </ul>
+        </li>
+        <li><strong>Phase 4: Major Growth</strong>
+          <ul>
+            <li>Major exchange listings</li>
+            <li>Larger-scale community initiatives</li>
+            <li>Interactive experiences</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions (FAQs)</h2>
+      <p><strong>What is Squeeb?</strong><br/>
+        A fun, deflationary meme coin built to entertain and engage.
+      </p>
+      <p><strong>What’s the token tax?</strong><br/>
+        A 5% tax on transactions: 2% to development, 2% to marketing, and 1% burned.
+      </p>
+      <p><strong>Is Squeeb safe?</strong><br/>
+        Squeeb prioritizes transparency with clear tokenomics and ongoing community communication.
+      </p>
+    </section>
+
+    <section id="security">
+      <h2>Security and Transparency</h2>
+      <ul>
+        <li><strong>Contract Audit:</strong> (Coming soon)</li>
+        <li><strong>Liquidity Lock:</strong> (Information coming soon)</li>
+        <li><strong>Developer Wallet:</strong> Transparent allocation for development & marketing</li>
+        <li><strong>Burn Mechanism:</strong> Tokens permanently removed from supply, enhancing deflation</li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2>Contact & Support</h2>
+      <p><strong>General Inquiries:</strong> <a href="mailto:info@squeeb.wtf">info@squeeb.wtf</a></p>
+      <p><strong>Partnerships & Collaborations:</strong> <a href="mailto:partnerships@squeeb.wtf">partnerships@squeeb.wtf</a></p>
+
+      <h2>Join the Fun!</h2>
+      <ul>
+        <li><strong>Website:</strong> <a href="https://squeeb.wtf" target="_blank" rel="noopener">squeeb.wtf</a></li>
+        <li><strong>Twitter/X:</strong> <a href="https://x.com/Squeeb" target="_blank" rel="noopener">x.com/Squeeb</a></li>
+        <li><strong>BscScan:</strong> (Contract link when live)</li>
+      </ul>
+      <p>Our community shapes Squeeb. Join in, create memes, win merch, and help make crypto fun for everyone!</p>
+    </section>
+
+  </main>
+
+  <!-- Footer / Disclaimers -->
+  <footer>
+    <p class="disclaimer">
+      <strong>Disclaimer:</strong> This site is for informational purposes only and does not
+      constitute financial advice. Cryptocurrency investments carry inherent risks; always do
+      your own research.
+    </p>
+    <p class="disclaimer">
+      &copy; 2025 Squeeb. All Rights Reserved.
+    </p>
+  </footer>
+
+  <!-- Optional JS: Connect Wallet Logic -->
+  <script>
+    const connectWalletBtn = document.getElementById("connectWalletBtn");
+    
+    connectWalletBtn.addEventListener("click", async () => {
+      if (typeof window.ethereum !== "undefined") {
+        try {
+          // Request account access
+          await window.ethereum.request({ method: 'eth_requestAccounts' });
+          const provider = new ethers.providers.Web3Provider(window.ethereum);
+          const signer = provider.getSigner();
+          const address = await signer.getAddress();
+          alert("Wallet connected: " + address);
+          // Additional contract interactions can go here
+        } catch (error) {
+          console.error(error);
+          alert("Failed to connect wallet.");
+        }
+      } else {
+        alert("No Ethereum-compatible browser extension detected. Please install MetaMask or similar.");
+      }
+    });
+  </script>
+</body>
+</html>
