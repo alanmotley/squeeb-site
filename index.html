@@ -1,172 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Squeeb - The Meme Coin That Squishes Boredom & Boosts Value</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Squeeb: The Meme Coin That Squishes Boredom</title>
+  <link rel="icon" type="image/png" href="images/favion_003.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f4f4f4;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #01ebc1, white);
       color: #333;
     }
-    header, footer {
-      background: #222;
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
+    .hero {
+      background: #7AF1D5;
+      color: #333;
+      padding: 80px 0;
     }
-    .container {
-      width: 80%;
-      max-width: 1000px;
-      margin: auto;
-      overflow: hidden;
-      padding: 2rem 0;
+    .card {
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
     }
-    nav ul li {
-      display: inline;
-      margin: 0 1rem;
+    .cta-btn {
+      background: #ff5d0c;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
     }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+    .cta-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
-    h1, h2, h3 {
-      margin-top: 0;
-      color: #222;
-    }
-    .section {
-      background: #fff;
-      padding: 2rem;
-      margin-bottom: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    footer {
+      background-color: rgba(255,255,255,0.9);
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Squeeb</h1>
-      <nav>
-        <ul>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#tokenomics">Tokenomics</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#join">Join the Fun</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
+<header class="hero text-center">
   <div class="container">
-    <!-- Introduction Section -->
-    <section class="section" id="introduction">
-      <h2>Squeeb: The Meme Coin That Squishes Boredom & Boosts Value</h2>
-      <p><strong>Squeeb? wtf?</strong></p>
-      <h3>Introduction: Squeeb Reimagined</h3>
-      <p>
-        Squeeb isn’t just another meme coin—it’s your gateway to a dynamic crypto experience built on intelligent tokenomics.
-        We blend the humor and community spirit of meme culture with a robust deflationary strategy.
-        Every transaction fuels development, drives marketing, and actively removes tokens from circulation.
-      </p>
-      <p>
-        <strong>Our Mission:</strong> To deliver fun, engaging moments while implementing innovative token sinks and faucets
-        that balance token supply and utility for a sustainable, value-driven future.
-      </p>
-    </section>
-
-    <!-- Tokenomics Section -->
-    <section class="section" id="tokenomics">
-      <h3>Tokenomics & Deflationary Strategy</h3>
-      <p>
-        In the Squeeb ecosystem, every transaction incurs a <strong>5% fee</strong> allocated as follows:
-      </p>
-      <ul>
-        <li>
-          <strong>Development Fee (2%):</strong> Funds ongoing project development and community initiatives.
-        </li>
-        <li>
-          <strong>Marketing Fee (2%):</strong>
-          <ul>
-            <li>
-              <strong>Direct Marketing (1.5%):</strong> Immediately transferred to our marketing wallet to drive promotional campaigns.
-            </li>
-            <li>
-              <strong>Buyback Reserve (0.5%):</strong> Accumulated in the contract for periodic buyback and burn events, reducing supply.
-            </li>
-          </ul>
-        </li>
-        <li>
-          <strong>Burn Fee (1%):</strong> Tokens are immediately burned on every transaction, ensuring continuous deflation.
-        </li>
-      </ul>
-      <p>
-        This balanced fee structure means that while Squeeb remains widely accessible, our smart token sinks work to enhance long-term value by maintaining scarcity.
-      </p>
-    </section>
-
-    <!-- Features Section -->
-    <section class="section" id="features">
-      <h3>Key Features</h3>
-      <ul>
-        <li>
-          <strong>Dynamic Fee Adjustments:</strong> Flexible fee settings allow us to adapt to changing market conditions and community needs.
-        </li>
-        <li>
-          <strong>Buyback & Burn Mechanism:</strong> The contract accumulates a buyback reserve, which is used in periodic events to remove tokens from circulation.
-        </li>
-        <li>
-          <strong>Transparent Fee Distribution:</strong> Every fee allocation is logged on-chain, ensuring complete transparency.
-        </li>
-        <li>
-          <strong>Community-Centric Design:</strong> Built for a vibrant, ever-evolving community that drives both fun and value.
-        </li>
-      </ul>
-    </section>
-
-    <!-- Join Section -->
-    <section class="section" id="join">
-      <h3>Join the Fun!</h3>
-      <p>
-        With Squeeb, you're not just joining a meme coin—you’re becoming part of a movement that combines playful culture with smart tokenomics.
-        Our fee structure actively supports long-term value creation while fueling growth through development and marketing.
-      </p>
-      <p>
-        <strong>Ready to squeeb?</strong> Join our community and experience a crypto journey where every transaction contributes to a sustainable and fun future.
-      </p>
-      <p>
-        <strong>Website:</strong> <a href="https://squeeb.wtf" target="_blank">https://squeeb.wtf</a><br>
-        <strong>Twitter/X:</strong> <a href="https://x.com/Squeebwtf" target="_blank">https://x.com/Squeebwtf</a><br>
-        <strong>BscScan:</strong> *(Contract link when live)*
-      </p>
-    </section>
+    <img src="images/squeeblogo_blue.png" alt="Squeeb Logo" class="img-fluid" class=\"img-fluid\" style=\"filter: drop-shadow(0 10px 15px rgba(0,0,0,0.3)); width: 100%; max-width: 900px; height: auto;\">
+    <h1 class="display-4 fw-bold mt-3">The Meme Coin That Squishes Boredom</h1>
+    <p class="lead mb-4">Welcome to the #SqueebLife!</p>
+    <a href="#buy" class="btn btn-lg cta-btn">
+      <i class="fa-brands fa-bitcoin"></i> Buy Squeeb
+    </a>
   </div>
+</header>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Squeeb. All rights reserved.</p>
+<main class="container py-5">
+
+  <section class="mb-4 text-center">
+    <img src="images/squeebcoin_02.png" alt="Squeeb Coin" class="img-fluid mb-2" style="max-width: 400px;">
+  </section>
+
+  <section class="mb-5 text-center">
+    <h2><strong>Our Mission</strong></h2>
+    <p>At Squeeb, crypto should be entertaining, inclusive, and a bit unpredictable. Our goal? Create fun-filled moments that gently make you say, "wtf?"—but always with a grin.</p>
+  </section>
+
+  <section class="mb-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2><strong>Introduction: Squeeb Explained</strong></h2>
+        <p>Squeeb is your crypto bestie—here to squash boredom, deliver laughs, and add a pinch of "wtf?" to your blockchain experience. It's a meme coin designed to leave you smiling, slightly amused, and maybe a little curious. If you're a Gen Z trailblazer, TikTok enthusiast, or someone who stumbled upon this quirky crypto, you'll quickly understand why everyone's asking, "Squeeb? wtf?"</p>
+      </div>
+      <div class="col-md-6">
+        <h2><strong>Why Squeeb?</strong></h2>
+        <p>Let's face it, crypto can be a little dry. Enter Squeeb: inspired by the playful vibes of TikTok and meme culture, we’re here to liven things up. Think catchy hashtags (#SqueebLife), relatable soundbites, influencer collabs, and merchandise that sparks conversations starting with "Squeeb? wtf?"</p>
+      </div>
     </div>
-  </footer>
+  </section>
+
+  <section class="mb-5">
+    <h2 class="text-center mb-2"><strong>Tokenomics 📊</strong></h2>
+    <p class="text-center text-muted mb-5">Simple, Clear, and Designed for Community Growth</p>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="card p-4 text-white" style="background-color: #01ebc1;" data-aos="fade-up">
+          <h5 class="mb-3"><i class="fa-solid fa-coins fa-2x"></i><br>Supply</h5>
+          <p class="display-6 fw-bold">100B</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-white" style="background-color: #007dfe;" data-aos="fade-up" data-aos-delay="100">
+          <h5 class="mb-3"><i class="fa-solid fa-cube fa-2x"></i><br>Blockchain</h5>
+          <p class="display-6 fw-bold">BSC</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-white" style="background-color: #ff5d0c;" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="mb-3"><i class="fa-solid fa-fire fa-2x"></i><br>Burn Rate</h5>
+          <p class="display-6 fw-bold">1%</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card p-4 text-white" style="background-color: #eac455;" data-aos="fade-up" data-aos-delay="300">
+          <h5 class="mb-3"><i class="fa-solid fa-percent fa-2x"></i><br>Tax</h5>
+          <p class="display-6 fw-bold">5%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy" class="mb-5">
+    <h2 class="text-center mb-2"><strong>How to Buy Squeeb 🛒</strong></h2>
+    <p class="text-center text-muted mb-5">Easy steps to get you started quickly!</p>
+    <div class="row text-center g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card p-4">
+          <i class="fa-solid fa-wallet fa-3x mb-3" style="color:#007dfe;"></i>
+          <h5 class="mb-3">Setup Wallet</h5>
+          <p>Download MetaMask or Trust Wallet and set up your wallet.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-4">
+          <i class="fa-solid fa-coins fa-3x mb-3" style="color:#ff5d0c;"></i>
+          <h5 class="mb-3">Get BNB</h5>
+          <p>Purchase BNB on an exchange and send it to your wallet.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-4">
+          <i class="fa-solid fa-exchange-alt fa-3x mb-3" style="color:#01ebc1;"></i>
+          <h5 class="mb-3">Swap for SQUEEB</h5>
+          <p>Go to PancakeSwap, connect your wallet, and swap BNB for SQUEEB.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="text-center py-4">
+  <p>&copy; 2025 Squeeb. All Rights Reserved.</p>
+  <div class="mb-3">
+    <a href="https://discord.gg/bTGcYe7V" class="me-3" target="_blank"><i class="fab fa-discord fa-2x"></i></a>
+    <a href="https://x.com/Squeebwtf" class="me-3" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+  </div>
+  <div>
+    <p>General Inquiries: <a href="mailto:info@squeeb.wtf">info@squeeb.wtf</a></p>
+    <p>Partnerships & Collaborations: <a href="mailto:partnerships@squeeb.wtf">partnerships@squeeb.wtf</a></p>
+    <p>BscScan: <a href="#">(Contract link when live)</a></p>
+  </div>
+  <div class="container text-center py-3">
+    <h5>Legal & Disclaimers</h5>
+    <p class="small">This project is not financial advice. Always conduct your own research before investing.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
-
